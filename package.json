@@ -1,0 +1,23 @@
+{
+  "name": "@innovixx/stylelint-config",
+  "version": "0.0.1",
+  "main": "configs/index.js",
+  "repository": "git@github.com:innovixx/stylelint-config.git",
+  "description": "Opinionated stylelint config for JavaScript developers",
+  "author": "service@innovixx.co.uk",
+  "license": "MIT",
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "style-guide"
+  ],
+  "scripts": {
+    "build": "yarn run lint",
+    "demo": "stylelint --fix ./demo/**/*.scss"
+  },
+  "dependencies": {
+    "stylelint": "^16.10.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.8.1"
+  }
+}
