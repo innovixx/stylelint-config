@@ -29,8 +29,5 @@ module.exports = {
         ]
       }
     ],
-    "unit-disallowed-list": [
-      "px"
-    ]
   }
 };
