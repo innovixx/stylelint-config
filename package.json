@@ -1,12 +1,11 @@
 {
   "name": "@innovixx/stylelint-config",
-  "version": "0.0.5",
+  "version": "1.0.0-alpha.0",
   "main": "config/index.mjs",
   "repository": "git@github.com:innovixx/stylelint-config.git",
   "description": "Opinionated stylelint config for JavaScript developers",
   "author": "service@innovixx.co.uk",
   "license": "MIT",
-  "type": "module",
   "keywords": [
     "stylelint",
     "stylelint-config",
