@@ -1,23 +1,28 @@
 {
   "name": "@innovixx/stylelint-config",
   "version": "0.0.5",
-  "main": "index.js",
+  "main": "config/index.mjs",
   "repository": "git@github.com:innovixx/stylelint-config.git",
   "description": "Opinionated stylelint config for JavaScript developers",
   "author": "service@innovixx.co.uk",
   "license": "MIT",
+  "type": "module",
   "keywords": [
     "stylelint",
     "stylelint-config",
     "style-guide"
   ],
   "scripts": {
-    "build": "yarn run lint",
-    "demo": "stylelint --fix ./demo/**/*.scss"
+    "lint": "stylelint  \"demo/**/*.scss\""
   },
   "dependencies": {
-    "stylelint": "^16.10.0",
+    "prettier": "^3.5.2",
+    "sass": "^1.85.1",
+    "stylelint": "^16.14.0",
+    "stylelint-config-recommended": "^15.0.0",
     "stylelint-order": "^6.0.4",
-    "stylelint-scss": "^6.8.1"
-  }
+    "stylelint-prettier": "^5.0.3",
+    "stylelint-scss": "^6.11.1"
+  },
+  "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b"
 }
