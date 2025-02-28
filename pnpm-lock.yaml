@@ -15,7 +15,7 @@ importers:
         specifier: ^1.85.1
         version: 1.85.1
       stylelint:
-        specifier: ^16.14.0
+        specifier: ^16.14.1
         version: 16.14.1
       stylelint-config-recommended:
         specifier: ^15.0.0
