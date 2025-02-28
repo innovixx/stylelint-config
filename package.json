@@ -6,7 +6,6 @@
   "description": "Opinionated stylelint config for JavaScript developers",
   "author": "service@innovixx.co.uk",
   "license": "MIT",
-  "exports": "./index.js",
   "keywords": [
     "stylelint",
     "stylelint-config",
