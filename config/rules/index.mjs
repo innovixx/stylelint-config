@@ -1,10 +1,31 @@
 const rules = {
 	rules: {
+		'at-rule-no-unknown': [true, {
+			ignoreAtRules: [
+				'include',
+				'forward',
+				'mixin',
+				'function',
+				'return',
+				'use',
+			],
+		}],
 		"declaration-block-no-duplicate-properties": true,
+		'declaration-property-value-no-unknown': [true, {
+			ignoreProperties: {
+				'/.+/': [
+					/^(base\(\d+(\.\d+)?\)( \* \d+(\.\d+)?)*|spacing\([a-zA-Z]+\)|colors\([a-zA-Z]+\))$/
+				],
+			}
+		}],
 		"font-weight-notation": "numeric",
 		"no-duplicate-selectors": true,
 		"no-unknown-animations": true,
 		"order/properties-alphabetical-order": true,
+		"prettier/prettier": [true, {
+			"singleQuote": true,
+			"tabWidth": 2,
+		}],
 		"property-no-unknown": [
 			true,
 			{
