@@ -1,6 +1,6 @@
 {
   "name": "@innovixx/stylelint-config",
-  "version": "1.0.3-alpha.0",
+  "version": "1.0.3-alpha.1",
   "main": "config/index.js",
   "repository": "git@github.com:innovixx/stylelint-config.git",
   "description": "Opinionated stylelint config for JavaScript developers",
