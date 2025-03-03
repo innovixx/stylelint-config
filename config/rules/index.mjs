@@ -14,7 +14,7 @@ const rules = {
 		'declaration-property-value-no-unknown': [true, {
 			ignoreProperties: {
 				'/.+/': [
-					/^(base\(\d+(\.\d+)?\)( \* \d+(\.\d+)?)*|spacing\([a-zA-Z]+\)|colors\([a-zA-Z]+\))$/
+					/^(.*base\(\d*(\.\d+)?\).*)|(spacing\([a-zA-Z]+\))|(colors\([a-zA-Z]+\))|(zIndex\([a-zA-Z]+\))$/
 				],
 			}
 		}],
