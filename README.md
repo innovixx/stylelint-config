@@ -1,6 +1,8 @@
-# Eslint Style Guide
+# Stylelint Config Guide
 
 ## Highlights
+
+A Stylelint config 
 
 ## Quick Start
 
@@ -8,55 +10,47 @@
 
 ```bash
 $ npm i --save-dev @innovixx/stylelint-config
-$ npm info @innovixx/stylelint-config peerDependencies
-$ npm i --save-dev <dependency>@<version> # for each dependency in the above output
 $ # or
 $ yarn add --dev @innovixx/stylelint-config
-$ yarn info @innovixx/stylelint-config peerDependencies
-$ yarn add --dev <dependency>@<version> # for each dependency in the above output
+$ #or
+$ pnpm i --save-dev @innovixx/stylelint-config
 ```
 
 ### Usage
 
-There are a number of configurations for consumption, all of which are packaged together as the default export &mdash; *or they can be selectively extended, which prevents the path names [from being written shorthand](https://stylelint.org/docs/developer-guide/shareable-configs#sharing-multiple-configs).*
+There are a number of configurations for consumption. For an example of a minimal base configuration:
 
 ```javascript
-{
-  "extends": "@innovixx"
-  // or selectively extend any config(s)
-  // "extends": [
-  //   "@innovixx/stylelint-config/configs/base",
-  //   "@innovixx/stylelint-config/configs/jest",
-  //   "@innovixx/stylelint-config/configs/react",
-  // ]
+import plugins from "./config/plugins/index.mjs";
+import rules from "./config/rules/index.mjs";
+import extendsConfig from "./config/extends/index.mjs";
+
+export default {
+  extends: [
+    ...extendsConfig.extends
+  ],
+  plugins: [
+    ...plugins.plugins
+  ],
+  rules: {
+    ...rules.rules
+  }
 }
 ```
+This can then be extended to provide custom rules, plugins, and settings. For more information see the [Stylelint config guide](https://stylelint.io/user-guide/configure)
 
-If using Webpack, install and configure `stylelint-loader` to have loaded files automatically linted.
-
-```javascript
-{
-  test: /\.js$/,
-  exclude: /node_modules/,
-  loader: 'stylelint-loader',
-  options: {
-    fix: true,
-    emitWarning: true,
-  },
-}
-```
-
-For working examples, see the [demo app](./demo/App.demo.js).
+For working examples, see the [demo app](./demo).
 
 ## Demo
 
 ```bash
 $ git clone git@github.com:innovixx/stylelint-config.git
-$ yarn
-$ yarn demo
-$ open http://localhost:3000
+$ pnpm i
+$ pnpm lint
 ```
+
+The demo directory uses the Stylelint config file in the [root](https://github.com/innovixx/stylelint-config/blob/master/stylelint.config.mjs) of the project.
 
 ## License
 
-[MIT](https://github.com/innovixx/stylelint-config/blob/master/LICENSE) Copyright (c) Innovixx Digital Limited
+[MIT](https://github.com/innovixx/stylelint-config/blob/master/LICENSE) Copyright (c) Innovixx, Ltd
