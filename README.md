@@ -8,12 +8,14 @@ An extensible Stylelint config for enforcing consistent conventions and best pra
 
 ### Installation
 
-```bash
-$ npm i --save-dev @innovixx/stylelint-config
-$ # or
-$ yarn add --dev @innovixx/stylelint-config
-$ #or
-$ pnpm i --save-dev @innovixx/stylelint-config
+```
+npm i --save-dev @innovixx/stylelint-config
+```
+```
+yarn add --dev @innovixx/stylelint-config
+```
+```
+pnpm i -D @innovixx/stylelint-config
 ```
 
 ### Usage
