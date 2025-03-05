@@ -2,7 +2,7 @@
 
 ## Highlights
 
-A Stylelint config 
+An extensible Stylelint config for enforcing consistent conventions and best practices in SASS, SCSS, Less & CSS.
 
 ## Quick Start
 
