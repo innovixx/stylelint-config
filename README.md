@@ -45,10 +45,10 @@ For working examples, see the [demo app](./demo).
 
 ## Demo
 
-```bash
-$ git clone git@github.com:innovixx/stylelint-config.git
-$ pnpm i
-$ pnpm lint
+```
+git clone git@github.com:innovixx/stylelint-config.git
+pnpm i
+pnpm lint
 ```
 
 The demo directory uses the Stylelint config file in the [root](https://github.com/innovixx/stylelint-config/blob/master/stylelint.config.mjs) of the project.
