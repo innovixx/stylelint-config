@@ -14,7 +14,8 @@ const rules = {
 		'declaration-property-value-no-unknown': [true, {
 			ignoreProperties: {
 				'/.+/': [
-					/^(.*base\(\d*(\.\d+)?\).*)|(spacing\([a-zA-Z]+\))|(colors\([a-zA-Z]+\))|(zIndex\([a-zA-Z]+\))$/
+					/^(.*base\(-?\d*(\.\d+)?\).*)|(spacing\([a-zA-Z]+\))|(colors\([a-zA-Z]+\))|(zIndex\([a-zA-Z]+\))$/,
+					/.*\$\w+.*/,
 				],
 			}
 		}],
@@ -34,9 +35,14 @@ const rules = {
 				]
 			}
 		],
-		"unit-disallowed-list": [
-			"px"
-		],
+	"unit-disallowed-list": [
+  ["px"],
+  {
+    ignoreMediaFeatureNames: {
+       px: ["min-width", "max-width", "width"],
+    }
+  }
+],
 		"scss/dollar-variable-pattern": null,
 		"scss/operator-no-unspaced": null,
 		"selector-pseudo-class-no-unknown": [

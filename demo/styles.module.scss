@@ -1,4 +1,12 @@
+$headerHeight: base(2.5);
+
 .test {
 	font-size: base();
+	height: calc(100dvh - $headerHeight);
 	line-height: base(1) * 1.2;
+	margin: base(-0.05);
+
+	@media only screen and (width <= 768px) {
+		font-size: base(0.5);
+	}
 }
