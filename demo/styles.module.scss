@@ -1,4 +1,14 @@
+@use 'sass:math';
+
 $headerHeight: base(2.5);
+$htmlFontSize: 16;
+$baselinePX: 20;
+
+$multiplier: 1;
+
+@function base($multiplier: 1) {
+	@return math.div($baselinePX, $htmlFontSize) * $multiplier * 1rem;
+}
 
 .test {
 	font-size: base();
