@@ -14,7 +14,7 @@ $multiplier: 1;
 	font-size: base();
 	height: calc(100dvh - $headerHeight);
 	line-height: base(1) * 1.2;
-	margin: base(-0.05);
+	margin: 10px;
 
 	@media only screen and (width <= 768px) {
 		font-size: base(0.5);

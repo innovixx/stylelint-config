@@ -35,14 +35,6 @@ const rules = {
 				]
 			}
 		],
-	"unit-disallowed-list": [
-	["px"],
-	{
-	ignoreMediaFeatureNames: {
-		 px: ["min-width", "max-width", "width"],
-	}
-	}
-],
 		"scss/dollar-variable-pattern": null,
 		"scss/operator-no-unspaced": null,
 		"selector-pseudo-class-no-unknown": [
