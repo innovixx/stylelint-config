@@ -15,11 +15,11 @@
     "lint": "stylelint  \"demo/**/*.scss\""
   },
   "dependencies": {
-    "prettier": "^3.8.1",
-    "sass": "^1.97.3",
-    "stylelint": "^17.4.0",
+    "prettier": "^3.8.3",
+    "sass": "^1.99.0",
+    "stylelint": "^17.11.0",
     "stylelint-config-recommended": "^18.0.0",
-    "stylelint-order": "^8.0.0",
+    "stylelint-order": "^8.1.1",
     "stylelint-prettier": "^5.0.3",
     "stylelint-scss": "^7.0.0"
   },
