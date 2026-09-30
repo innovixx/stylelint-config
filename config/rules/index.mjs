@@ -38,6 +38,8 @@ const rules = {
 				]
 			}
 		],
+		"scss/no-duplicate-dollar-variables": true,
+		"scss/no-duplicate-mixins": true,
 		"scss/dollar-variable-pattern": null,
 		"scss/operator-no-unspaced": null,
 		"selector-pseudo-class-no-unknown": [
