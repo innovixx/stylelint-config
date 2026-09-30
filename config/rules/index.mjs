@@ -19,6 +19,9 @@ const rules = {
 				],
 			}
 		}],
+		'at-rule-prelude-no-invalid': [true, {
+			ignoreAtRules: ['function'],
+		}],
 		"font-weight-notation": "numeric",
 		"no-duplicate-selectors": true,
 		"no-unknown-animations": true,
