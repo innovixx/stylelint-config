@@ -9,25 +9,25 @@ importers:
   .:
     dependencies:
       prettier:
-        specifier: ^3.9.9
+        specifier: ^3.9.10
         version: 3.9.10
       sass:
-        specifier: ^1.105.1
+        specifier: ^1.106.1
         version: 1.106.1
       stylelint:
-        specifier: ^17.15.0
+        specifier: ^17.16.0
         version: 17.16.0
       stylelint-config-recommended:
         specifier: ^18.0.0
         version: 18.0.0(stylelint@17.16.0)
       stylelint-order:
-        specifier: ^8.1.1
+        specifier: ^8.1.2
         version: 8.1.2(stylelint@17.16.0)
       stylelint-prettier:
         specifier: ^5.0.3
         version: 5.0.3(prettier@3.9.10)(stylelint@17.16.0)
       stylelint-scss:
-        specifier: ^7.3.0
+        specifier: ^7.4.0
         version: 7.4.0(stylelint@17.16.0)
 
 packages:
