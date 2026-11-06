@@ -50,7 +50,8 @@ const rules = {
 				]
 			}
 		],
-	}
+		'value-no-invalid': null,
+	},
 };
 
 export default rules;

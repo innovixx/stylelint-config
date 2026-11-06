@@ -1,7 +1,8 @@
 const plugins = {
 	plugins: [
-		"stylelint-scss",
-		"stylelint-order"
+		'stylelint-scss',
+		'stylelint-order',
+		'stylelint-prettier'
 	]
 }
 
